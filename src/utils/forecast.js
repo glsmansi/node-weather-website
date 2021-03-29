@@ -8,7 +8,7 @@ const forecast = (a, b, callback) => {
         } else if (body.error) {
             callback("unable to load page. please try again", undefined)
         } else {
-            callback(undefined, body.location.lat + ' is latitude ' + body.location.lon + ' is longitude')
+            callback(undefined, body.location.lat + ' is latitude ' + body.location.lon + ' is longitude. These are the latitude and longitudes of ' + body.location)
         }
     })
 
